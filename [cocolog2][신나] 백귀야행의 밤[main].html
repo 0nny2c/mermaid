@@ -1,0 +1,2351 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+</head>
+<body>
+<style>
+    html, body{padding: 0; margin: 0;}
+    * {box-sizing: border-box;}
+    #cclog_ccf .ccl_inWrap {font-size: 15px; letter-spacing: -.5px; color: #ffffff;}
+
+    #cclog_ccf .ccl_inWrap .ccl_tab {width: 100%; background: #27262C; position: relative;}
+    #cclog_ccf .ccl_inWrap .ccl_tab.ccl_main:before {background: none;}
+    #cclog_ccf .ccl_inWrap .ccl_tab.ccl_main{background: #1f1e22;}
+    #cclog_ccf .ccl_inWrap .ccl_tabtitle {margin: 0; color: #bcbcc1; background: #474952; position: absolute; top: 10px; right: 10px; border-radius: 5px; padding: 5px; font-weight: 200}
+
+    #cclog_ccf .ccl_inWrap .ccl_player {display: flex; overflow: hidden; padding: 20px 0px 20px 20px; border-bottom: 1px solid rgba(255,255,255,0.08)}
+    #cclog_ccf .ccl_inWrap .ccl_infoWrap .ccl_imgWrap {overflow: hidden; width: 40px; height: 40px; background-color: rgba(0, 0, 0, 0.31); float: left; border-radius: 5px; }
+    #cclog_ccf .ccl_inWrap .ccl_infoWrap .ccl_imgWrap img {width: 40px; height: auto;}
+    #cclog_ccf .ccl_inWrap .ccl_infoWrap .ccl_imgWrap:not(:has(img)) {opacity: 0;}
+    #cclog_ccf .ccl_inWrap .ccl_textWrap {float: left; line-height: 1.6; margin-left: 20px; margin-right: 20px;}
+    #cclog_ccf .ccl_inWrap .ccl_textWrap .ccl_Uname {margin: 0; font-weight: 800;}
+    #cclog_ccf .ccl_inWrap .ccl_textWrap .ccl_Utext {margin: 0; font-weight: 400; color: #59595D}
+    #cclog_ccf .ccl_inWrap .ccl_tab.ccl_main .ccl_textWrap .ccl_Utext {color: #ffffff;}
+
+    #cclog_ccf .ccl_inWrap .ccl_player.system {padding: 0px; border-color: #313033 !important; background: #33313B; text-align: center; justify-content: center}
+    #cclog_ccf .ccl_inWrap .ccl_player.system .ccl_infoWrap {display: none;}
+    #cclog_ccf .ccl_inWrap .ccl_player.system .ccl_textWrap {margin-left: 0; padding: 10px 20px}
+    #cclog_ccf .ccl_inWrap .ccl_player.system .ccl_textWrap .ccl_Uname {color: #858296; font-size:0.86em; letter-spacing: 1px; padding: 3px 8px; border-radius: 15px; background: #000000}
+    #cclog_ccf .ccl_inWrap .ccl_player.system .ccl_textWrap .ccl_Utext {margin-top: 5px; color: #908E9A; letter-spacing: -1px}
+
+    #cclog_ccf .ccl_inWrap .ccl_main .ccl_player.narrator {padding: 0px; text-align: center; justify-content: center;}
+    #cclog_ccf .ccl_inWrap .ccl_main .ccl_player.narrator .ccl_infoWrap {display: none;}
+    #cclog_ccf .ccl_inWrap .ccl_main .ccl_player.narrator .ccl_textWrap {margin-left: 0; padding: 10px 20px}
+    #cclog_ccf .ccl_inWrap .ccl_main .ccl_player.narrator .ccl_textWrap .ccl_Uname {display: none;}
+    #cclog_ccf .ccl_inWrap .ccl_main .ccl_player.narrator .ccl_textWrap .ccl_Utext {margin-top: 5px; letter-spacing: -1px}
+
+</style>
+<div class="cclog_wrap" id="cclog_ccf">
+    <div class="ccl_inWrap">
+        <div class="ccl_tab ccl_main">
+            <p class="ccl_tabtitle">메인</p>
+            <div class="ccl_player p006">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #4caf50">百鬼夜行の夜</p>
+                    <p class="ccl_Utext"><br> ────── &#168;&#240;&#186;&#176;˜&#168; ཐིཋྀ &#168;˜&#176;&#186;&#240;&#168;───────<br> <br>         &#119810;&#119834;&#119845;&#119845; &#119822;&#119839; &#119810;&#119853;&#119841;&#119854;&#119845;&#119841;&#119854; &#120789;&#119853;&#119841; &#119812;&#119837;&#119842;&#119853;&#119842;&#119848;&#119847;  <br>                 「百鬼夜行の夜」<br>                                                              <br><br>                     ˑ༄ؘ ۪۪۫۫ ▹ ཐིཋྀ ◃ ۪۪۫۫ ༄ؘ ˑ<br><br><br>       인계에 찾아온 요괴들의 대행진,<br>  우리는 어디를 향해 걷고 있는 걸까요?<br><br><br>                     ˑ༄ؘ ۪۪۫۫ ▹ ཐིཋྀ ◃ ۪۪۫۫ ༄ؘ ˑ<br><br><br>                開始   |  2026.08.16~<br>                ①       |  静沢 直<br>                ②       |  榎本慎也<br><br><br>  ────── &#168;&#240;&#186;&#176;˜&#168; ཐིཋྀ &#168;˜&#176;&#186;&#240;&#168;───────</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">똑, 똑, 똑.<br>창문을 두드리는 소리에 잠에서 깨어납니다.<br>이 늦은 시간에 대체 누가 초인종도 아니고, 남의 방 창문을 두드린단 말인가요?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (시간을 한 번 확인한 후, 한숨을 내쉬고 창문 쪽으로 다가간다.)<br>(이 높이에서 두드릴 사람, 아니지&#183;&#183;&#183; 존재는 하나밖에 없을 텐데.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(정답이다. 창밖에서 손 열심히 흔든다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">덜 깬 눈으로 커튼을 열어 밖을 확인하면, 잠옷 차림의 나오가 있습니다.<br>어째서인지 귀와 꼬리가 돋아, 요괴임을 숨길 생각이 없는 상태네요.<br>나오가 이곳으로 건너온 지 3개월이 지났습니다.<br>평범하게 ‘인계’의 ‘인간’인 척 사는 게 그렇게 어려운 일인가요?<br>학교에서 걸핏하면 이상한 능력을 사용하고, 귀나 꼬리를 꺼내는 바람에 얼마나 곤란했던가요!</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(오늘로부터 3개월 전까지 모든 일들이 지나가 이마를 짚는다. 지금 이 순간까지&#183;&#183;&#183;.) &#183;&#183;&#183;뭘 웃고 있어. 빨리 들어와. 누가 보면 신고한다고.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(아랑곳 않고 계속 손 흔드는 중이다. 반대편 손에는 축제 때 사용하는 붉은 등불을 들고 있다.) 신고 당해도 나만 당하는 거 아니라 괜찮을 걸?<br>내 뒤를 봐, 에노모토. (손짓한다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">그게 문제라고. (내가 수습해야 한다고.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">아니, 문제 안 돼! (수습할 일 없다. 네가 내 뒤만 보면.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;또 무슨 이상한 일을 한 건 아니겠지? (네 등 너머 풍경을 고개를 살짝 빗겨나가 바라본다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">나오의 말에 그 뒤를 보면, 어라?<br>이게 무슨 일이죠?<br>평범한 주택가는 사라지고, 거대한 은하수가 흐르고 있습니다.<br>새하얗게 반짝이는 길 위를 걷는 건 100마리 남짓의 요괴 떼입니다.<br>당신이 아직 꿈을 꾸고 있는 걸까요?</p>
+                </div>
+            </div>
+            <div class="ccl_player p002">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0fa92fd822e2bcd85822762bec28674e273d650cca7974ec0060f61537213c91?t=1786249808470"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #42bdb5">▽</p>
+                    <p class="ccl_Utext">&lt;이성&gt; 판정</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">cc&lt;=60 이성 (1D100&lt;=60) 보너스, 페널티 주사위[0] ＞ 64 ＞ 64 ＞ 실패</p>
+                </div>
+            </div>
+            <div class="ccl_player system">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname">system</p>
+                    <p class="ccl_Utext">[ 에노모토 신야 ] SAN : 60 → 59</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;하?</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">당신이 내려오지 않자, 나오는 훌쩍 뛰어 당신이 서 있는 창가에 나앉습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">황당한 눈치네에. (당연한가?)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;이게 지금&#183;&#183;&#183;.<br>무슨 당연한 소리를 하고 앉았어. (네 볼이나 잡아 약하게 늘인다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">아야야&#183;&#183;&#183;&#183;&#183;&#183;. (당기는 대로 늘어난다.)<br>(볼 문질문질&#183;&#183;&#183;) 끄응, 인계에서도 축제 때 행진 같은 건 할 거 아냐?<br>그래서 익숙할 줄 알았지이&#183;&#183;&#183;&#183;&#183;&#183;. (아파.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;행진은 있지.(있다 해도 내가 그걸 볼 여유는 없지만. 아니, 그보다&#183;&#183;&#183;.) &#183;&#183;&#183;종족이 다르잖아. 보통의 인간은 길을 걷는다고.<br>(손을 떼고 한숨을 내쉰다.) &#183;&#183;&#183;저거, 우리만 보이는 건가?</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">음, 그런 거 같은데? 주택가가 사라졌다는 것부터가&#183;&#183;&#183;&#183;&#183;&#183;.<br>(괜히 네 콧잔등 꾹꾹, 누른다.) 뭐, 어쨌거나 길을 걷는다는 건 같네.<br>이건 백귀야행이야. 물론 인계에서 이런 게 펼쳐지는 이유는 나도 모른다만&#183;&#183;&#183;&#183;&#183;&#183;.<br>반가운 얼굴들도 있어서 보여주고 싶었어. &#183;&#183;&#183;&#183;&#183;&#183;물론 네가 보고 싶어할진 모르겠다만.</p>
+                </div>
+            </div>
+            <div class="ccl_player p005">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #8bc34a">백귀야행:</p>
+                    <p class="ccl_Utext">요괴들이 집단으로 나타나는 걸 부르는 말입니다. 나타난 요괴들은 떼를 지어 다니며 주변에 해를 끼친다고도 하죠. 주문이나 경전을 외워 요괴를 내쫓는 전설이 많습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">모처럼인데 같이 구경하지 않을래? 나름 보고 있으면 기분 좋은데. (손 건넨다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(왜 하필 이런 게 인계에서&#183;&#183;&#183;. 이 녀석이 인계에 있으니까, 오히려 다행인가 싶다가도.)<br>&#183;&#183;&#183;인간인 내가 구경해도 상관없는 건가?</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">상관없을 것 같은데? 등불이랑 가면만 쓰면 문제없을 거 같아.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;가면. 그때 귀랑 꼬리를 만들었던 것처럼 숨기는 건가.<br>그렇다면 &#183;&#183;&#183;괜찮겠네. (내밀어진 손 위로 제 손을 가볍게 얹는다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">당신이 맞잡으면, 나오는 당신 몫의 등불을 만들어줍니다.<br>그뿐만 아니라 그는 요괴 가면을 두 개 만들어내 당신에게 씌워주고, 자신도 착용합니다.<br>어느새 잠옷은 가면에 어울리는 근사한 축제 옷이 되어있습니다.<br>그렇게 가짜 요괴는 백귀야행에 합류합니다.<br>우글우글한 요괴들은 각자 등불을 든 채 시시덕거리면서 걷고 있습니다.<br>그 속에서, 당신은 익숙한 얼굴의 요괴들을 발견합니다.<br>타타, 미호, 쿠라마, 이채, 그리고...</p>
+                </div>
+            </div>
+            <div class="ccl_player p002">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0fa92fd822e2bcd85822762bec28674e273d650cca7974ec0060f61537213c91?t=1786249808470"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #42bdb5">▽</p>
+                    <p class="ccl_Utext">나오를요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(&#183;&#183;&#183;시즈사와?)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">아니, 익숙하다고 해야 하나요?<br>몇몇은 당신의 기억 속에 있는 모습보다 훨씬 더 어려 보입니다. 물론 나오도요.<br>100개에 달하는 등불이 어둠 속에서 선을 그리며 이동합니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(끔뻑.) 과거의 요괴들이네.<br>아무래도 이계와 인계의 시공간이 뒤틀려서 섞인 것 같은데&#183;&#183;&#183;&#183;&#183;&#183;.<br>원인은 알 수 없지만, 내버려 두면 영영 되돌리지 못할지도.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;내가 마지막으로 봤던 때보다 더 과거의?</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(끄덕인다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">어쩐지. 네 모습도 보이더라니. (덤덤하게 말하며 어린 시즈사와 쪽을 가리킨다.) 해결하는 방법은 알아?</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(움찔, 어린 자신이 있는 쪽은 최대한 보지 않는다&#183;&#183;&#183;&#183;&#183;&#183;.)<br>글쎄, 일단 따라 가보는 게 최선일 것 같은데&#183;&#183;&#183;&#183;&#183;&#183;.<br>시공간을 이렇게 만들어버린 원흉을 찾아내는 게 우선이니까.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(&#183;&#183;&#183;안 쳐다보는구나. 하긴, 나도 굳이 내 어린시절의 모습을 보려 하진 않을 테니. 이해할지도.)<br>그런가&#183;&#183;&#183;. 그럼, 이대로 따라가면서 방법을 찾을 수 밖에.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(아무래도, 일단 나는 도플갱어끼리 눈 마주치면 죽는다는 속설을 믿는다&#183;&#183;&#183;&#183;&#183;&#183;.)<br>응, 이대로면 네 일상이 완전히 부서져버리고 말 테니까.<br>행렬 틈에 끼어있다고 해서 답이 나올지는 잘 모르겠긴 하지만&#183;&#183;&#183;&#183;&#183;&#183; 손 놓고 가만히 있는 것보단 낫겠지. (에노모토 손 잡은 채로 마저 이동한다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">그렇게 말하며, 나오는 주변 요괴들을 구경합니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p012">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/3107a76c2e0867cb45a0c1ec30a9c84e85d9aeae1bd2ca983cbb8cbe2059379a?t=1786249844942"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #f44336">탐색 가능 구역</p>
+                    <p class="ccl_Utext">→ 주변에 있는 요괴들에게 말 걸기</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">어떤 것 같아? 오랜만에 보는 얼굴들이잖아. (타타부터 살핀다.) &#183;&#183;&#183;타타, 였던가.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;반갑기야 하지. (다소 떨떠름하다. 기억하던 것보단 어려서 그런가&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">당신의 앞에 있는 요괴는 고양이 수염을 가진 요괴, 타타입니다.<br>친구들과 함께 조잘거리며 걸어가고 있습니다.<br>예전에 봤을 때보다 확연히 어린 모습입니다.<br>덩치도 조금 더 작고, 인간보다 고양이에 가까운 얼굴입니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">(어라?) 제 이름을 아세요?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;음, 뭐. 알 수 있는 방법이 있어서.</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;.<br>쿠, 쿠라마 할머니처럼 독심술사&#183;&#183;&#183;?!</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">아니, 독심술로 이름은 못 알아내니까&#183;&#183;&#183;.<br>&#183;&#183;&#183;&#183;&#183;&#183;네가 이해하지 못할 요술이라고 말해둘까.</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;그런 요술도 있구나! 아직 제가 어려서 터득하지 못한 모양이네요&#183;&#183;&#183;. (헤헤.)<br>그보다, 처음 보는 요괴분이시네요?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">아, 그런가&#183;&#183;&#183;. (이 시간대면&#183;&#183;&#183; 그럴 법도 하지.)<br>(나만 알고 있다는 건 이런 느낌인가?) &#183;&#183;&#183;오늘 이곳에 처음 왔거든.</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">아아, 그렇구나&#183;&#183;&#183;. (이해했다는 듯이 고갤 끄덕인다.)<br>그럼 백귀야행도 처음이시겠네요?<br>물론 저도 어려서 처음이긴 하지만&#183;&#183;&#183;! (머쓱하다. 그래도 어른들한테 들은 건 있다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;그렇지? (인계에서 이런 일은 상상할 수도 없는 일이니까.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">그럼 저~기 있는 요괴들이 어디로 가고 있는지는 들으셨어요? (손가락으로 앞서 가는 요괴들 가리킨다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;음, 글쎄. 제일 앞에 있는 요괴가 알고 있지 않으려나.<br>어디로 가는지 궁금하냐?</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">네! 궁금해서 먼저 물어봤어요! (헤헤.)<br>어른들이 말씀해주셨는데, 길의 끝에 시공간을 뒤튼 자가 있을 거라고 해요.<br>그래서 저희는 그 사람에게 이 등불을 바치러 가는 거래요. 이게 공물이라던데&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;등불이 공물?</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">네에. 이걸 받고 부디 노여움을 가라앉혀, 우리의 세계를 원래대로 되돌려 달라고 비는 용도의 공물이라고 들었어요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;. (그걸로 되려나. 조금 이해하기 어려운데? 싶지만 뭐&#183;&#183;&#183;. 아무것도 모르는 이방인이 가질 의문은 아닌듯해 생각을 멈춘다.) &#183;&#183;&#183;잘됐으면 좋겠네.<br>계속 이곳에 너희가 있을 순 없을 테니까.</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">그쵸, 근데&#183;&#183;&#183;&#183;&#183;&#183;. (끔뻑, 감았다 뜬다. 에노모토 물끄럼, 본다&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;?</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">형도 같이 돌아가야 하잖아요? 누가 보면 인계 사람인 줄 알겠어요. (순수하다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(아, 그쪽.)<br>&#183;&#183;&#183;뭐, 그렇긴 하다만 아직 어린 네가 이해하기 어려운 사정이라는 게 나한테 있는 법이거든. (머리나 한 번 쓰다듬고 만다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p011">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1d398dffbcf51fbf230545c37fc6b1645c5bc88e99477fa35887282b92153829?t=1786877913239"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">타타</p>
+                    <p class="ccl_Utext">(손길 받으며 귀 쫑긋거렸다.) &#183;&#183;&#183;어른들의 사정! 이해했어요!</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">다른 요괴들도 살펴볼 수 있습니다. 익숙한 건 미호, 쿠라마, 이채, 그리고 어린 나오네요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">똑똑한 아이네. (작게 픽 웃고는 미호 쪽을 돌아본다. 이쪽도 기억보다 어린 모습인가?)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">붉은 털을 가진 자그마한 여우 요괴, 미호 또한 기억보다 한참 어린 모습입니다.<br>아직 영월호에 입학하지도 않은 어린 요괴네요.<br>시끄럽고 땍땍거리던 모습과 달리, 주눅 들고 잔뜩 겁먹은 표정으로 부모님을 따라 걷고 있습니다.<br>주변에서 큰 소리가 날 때마다 화들짝 놀라며 부모님에게 안깁니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(&#183;&#183;&#183;겁이 많네. 그러면서 어떻게 그렇게 나댔지?)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(그러면서 어떻게 그렇게 나댔냐는 표정 하고 있어&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">뭐, &#183;&#183;&#183;부모님이랑 있으니까 넘어갈까. (쿠라마 쪽으로 시선을 돌린다.) &#183;&#183;&#183;여전할 거 같긴 한데.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">가마를 타고 담뱃대를 문 구미호 요괴, 쿠라마입니다.<br>외형은 예전에 봤을 때와 크게 다르지 않습니다.<br>고고한 자태를 뽐내며, 다른 요괴들에게 훈수를 두고 있습니다.<br>당신과 눈이 마주치면...<br>어쩐지 묘한 표정을 지으며 윙크해줍니다.<br>설마 알아본 걸까요? 그럴 리가 없는데!</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;음, 진짜 여전하네.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;타타나 미호 같은 경우가 드문 케이스지, 뭐. (심드렁하다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;왠지 말 걸면 귀찮아질 것 같은 건 예나 지금이나.<br>(&#183;&#183;&#183;그래도 한 번 고개는 인사하듯 숙였다가 들고, 이채 쪽으로 시선을 돌린다. 이 녀석에게 할 말은 없지만.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">뱀과 여우의 혼혈 요괴, 이채입니다.<br>특유의 분위기 때문에 다들 접근하기 힘든 듯, 홀로 떨어져서 걷고 있습니다.<br>인계와 이계가 섞여버린 게 마음에 들지 않는지 못마땅한 티를 팍팍 내고 있습니다.<br>아, 방금 어깨가 부딪친 다른 요괴에게 화풀이하고 있네요.<br>혹시라도 눈이 마주치지 않게 조심합시다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(&#183;&#183;&#183;지가 화풀이해 봤자지. 여기도 여전하다는 눈빛으로 보다가, 마지막으로는 어린 시즈사와에게로 시선이 멈춘다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">지금보다 앳된 표정의 어린 나오는 조금 우울한 표정입니다.<br>손에 든 등은 바닥에 반쯤 끌리고 있습니다.<br>고개를 이리저리 돌리던 어린 나오는, 당신과 눈이 마주치자 움찔, 어깨를 들썩입니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(신기하다는 듯이 본다. 빤히, 빤히&#183;&#183;&#183;&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;? (조금 멀리 떨어져 있는 채로 입만 연다.) &#183;&#183;&#183;궁금한 게 있나?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(또 한 번 어깨 움찔거린다. 잠시 머뭇거리더니 총총&#183;&#183;&#183;.)<br>오빠한테서 선생님 냄새가 나&#183;&#183;&#183;&#183;&#183;&#183;.<br>신기해. (올려다본다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;아. (가까이로 다가온 시즈사와 내려다보다가 제 상체를 살짝 숙인다.) &#183;&#183;&#183;그렇게 닮았나?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(고개 열심히 끄덕인다.) 응, 닮았어&#183;&#183;&#183;!<br>얼굴도 닮았고, 선생님한테서 나던 냄새도 똑같구, 뭔가 편안한 느낌이고&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">열심히 말을 늘어놓던 나오는 갑자기 혼자 시무룩해집니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;아. 미, 미안&#183;&#183;&#183; 아니, 죄송해요&#183;&#183;&#183;&#183;&#183;&#183;.<br>매일 이런 얘기만 했더니, 다들 그만 좀 하라고 해서어&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (이럴 땐 뭐라고 말해 줘야 하는지 잘 모르겠는데.)<br>&#183;&#183;&#183;미안해하지 않아도 돼.<br>그만큼 너한테 소중한 거지?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(머뭇거리다 말고 한 번 끄덕였다.) 네, 엄청 소중해요&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(이제 사정을 아예 모르는 것도 아니고&#183;&#183;&#183;&#183;&#183;&#183;. 어린 시즈사와 머리 위로 손 가볍게 툭, 얹는다.) 그럼 계속 소중히 여기며 좋아하는 걸 말하면서 살아. 살면서 좋아하는 게 몇이나 생긴다고&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (올려진 손에 머리 부빗거린다. 도리도리.)<br>선생님이랑 똑같은 말했어, 이것도 신기해.<br>오빠를 보고 있으면 선생님이 생각나요, 기분 좋아. (헤헤&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;신기한 일이네, 그거. (머리카락을 헝클이듯 가볍게 쓰다듬어주고는 손을 뗀다. 이내 작게 중얼거린다.) &#183;&#183;&#183;난 닮은 줄 모르겠던데.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">응? 방금 뭐라고 하지 않았어요? (마지막 말엔 고갤 기울인다. 못 들었다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">알고 싶어?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">응&#183;&#183;&#183;!</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">네가 말한 선생과 오래 아는 사이거든. 그래서 닮은 모양이야.<br>&#183;&#183;&#183;물론, 나는 잘 못 느끼겠지만.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(&#183;&#183;&#183;!) 오빠도 선생님이랑 아는 사이였어요?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">응, 옛날에는. 지금은 안 만난 지 오래돼서 잘 모르겠지만.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">오래 알고 지낸 거였으면 선생님도 자주 봤을 테니까아&#183;&#183;&#183; 그래서 냄새가 남아있었나?<br>아무튼, 신기하다&#183;&#183;&#183;&#183;&#183;&#183;!! (표정 밝아진 채로 에노모토 옷깃 잡고 있다. 떨어질 생각 없어보인다&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;말이라도 전달해 줘? 그쪽을 기다리는 애가 있다고. (음. 이건 예상에 없었는데.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;전해주실 수 있어요? 있으면&#183;&#183;&#183; 있으며언&#183;&#183;&#183;.<br>&#183;&#183;&#183;있으면 전해주세요. 진짜 많이 보고 싶은데, 안 와서 속상하다구&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;.<br>&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;&#183;. (다음 성묘 때 찾아가서 욕이나 해줄까. 잠시 생각에 빠진다.)<br>&#183;&#183;&#183;전달해줄게. 전달할 방법이 있어서.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(뭐지, 뭔가 선생님이 욕먹을 것 같은 기분이 들었다.)<br>(착각인가, 볼 긁적이다 말고 이어진 말엔 웃는다.) &#183;&#183;&#183;네! 저어, 근데&#183;&#183;&#183;.<br>&#183;&#183;&#183;부탁드리는 김에 하나만 더 말씀드려도 돼요? (이젠 에노모토 옆에 찰싹, 붙었다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;뭔데?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">저어, 백귀야행 동안만이라도 옆에 있어도 되는지&#183;&#183;&#183;.<br>오빠 친절해, 다정해. 선생님도 알아. 대화하면 편안하기도 해, 그래서 좋아.<br>(올려다본다.) 안 돼요&#183;&#183;&#183;?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;나는 상관없긴 한데.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(열심히 허공 본다. 가면 쓴 상태로 애써 눈 안마주치겠다고 열심이다&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(쟤가 괜찮을지 모르겠네. 애쓰고 있는 시즈사와 한 번 본다.) &#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(에노모토 슬쩍, 본다.) &#183;&#183;&#183;&#183;&#183;&#183;.<br>(입모양으로 벙긋.) &#39;마음에 들면 데리고 다녀&#183;&#183;&#183;&#183;&#183;&#183;.&#39;</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (입모양을 읽으면 따라 벙긋거린다. ‘마음에 들어서가 아니잖아. 애라고.’)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(&#39;미안한데 지금 그런 이유는 나한테 안 먹히거든. 저거 나라서.&#39;)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(‘그럼 그대로 열심히 허공이나 보고 있어.’ 눈 가늘게 뜨고 쳐다보다가 한숨을 내쉰다.) &#183;&#183;&#183;백귀야행 동안만, 이야.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(&#39;너랑 삼 미터 떨어질 거야&#183;&#183;&#183;.&#39; 마찬가지로 한숨 내쉰다.)<br>(아무리 어린 나라지만 또래 친구한테 오빠라고 부르는 걸 보는 게 참&#183;&#183;&#183; 묘하다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(아무것도 모르고 태평한 낯이다.) &#183;&#183;&#183;&#183;&#183;&#183;!!<br>응, 백귀야행 동안만!<br>(히히.) 손 잡아도 돼요, 오빠?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (진짜 이래도 되나 싶어진다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (과거의 나 규탄한다. 나이 많으면 그냥 다 선생님이라 불렀어야지&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(대답이 들려오질 않으니 다시금 올려다본다.) 아, 안 돼요&#183;&#183;&#183;?<br>오빠랑 손 잡고 가고 싶은데&#183;&#183;&#183;&#183;&#183;&#183;. (힝.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (대답 대신 주머니에 넣었던 제 손을 꺼내 내민다. 음&#183;&#183;&#183;. 어린애니까 이해는 가는데, 이 애가 시즈사와라는 걸 알고 있으니 기분이 참&#183;&#183;&#183;&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(그걸 보고 있는 나는 어떻겠냐고.)<br>(아, 속 쓰려&#183;&#183;&#183;&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(내밀어진 손 힘주어 잡는다. 헤실거리기만&#183;&#183;&#183;)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(아무것도 모르는 애 얼굴에다가 뭐라 할 수도 없고&#183;&#183;&#183;. 그저 맡겨둔 손에 아주 약한 힘만 주어 잡을 뿐이었다. 고작 이런 걸로 좋아하는 걸 보니, 그동안은&#183;&#183;&#183;.)<br>(&#183;&#183;&#183;아니지. 더는 신경쓸 일이 아닌가. 이미 지난 일이고.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">그때, 삽시간에 주위의 풍경이 바뀝니다.<br>검은 우주처럼 일렁이던 배경은 초록색으로 물들고, 새가 지저귑니다.<br>향긋한 풀 내음과 함께 산속 풍경이 펼쳐집니다.<br>선명한 붉은색 토리이, 그리고 회색 계단이 주르륵 늘어집니다.<br>대열은 흐트러지지 않고 계속해서 앞으로 나아갑니다.<br>평지를 걷는 건 어렵지 않았지만, 끝없는 계단을 걸어야 한다니….<br>이건 아무래도 힘들 것 같아요.<br>주변 풍경을 눈에 담는다면, 평화롭고 잔잔해 삼림욕을 하는 것 같습니다.<br>계단의 양옆은 섬세한 조각상으로 장식되어 있습니다.<br>다양한 모양의 조각상을 살펴보며 앞으로 걷다 보면,</p>
+                </div>
+            </div>
+            <div class="ccl_player p002">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0fa92fd822e2bcd85822762bec28674e273d650cca7974ec0060f61537213c91?t=1786249808470"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #42bdb5">▽</p>
+                    <p class="ccl_Utext">&lt;듣기&gt; 판정</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">cc&lt;=75 듣기 (1D100&lt;=75) 보너스, 페널티 주사위[0] ＞ 47 ＞ 47 ＞ 보통 성공</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">푸스스, 수풀을 헤치고 누군가가 다가오는 소리가 들립니다.<br>다른 요괴들은 눈치채지 못한 것 같습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;? (소리가 들린 쪽으로 고개를 돌린다. 이걸, 눈치를 못 채고 있다고.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">잠시 후, 오른편에서 수풀을 헤치고 한 남자가 나타납니다.<br>베일로 얼굴을 가린 자는, 척 보기에도 심상치 않은 자태를 지니고 있었습니다.<br>걸을 때마다 품위가 넘치며, 고아한 분위기를 풍깁니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;뭐, &#183;&#183;&#183;뭐하는 녀석이지?</p>
+                </div>
+            </div>
+            <div class="ccl_player p002">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0fa92fd822e2bcd85822762bec28674e273d650cca7974ec0060f61537213c91?t=1786249808470"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #42bdb5">▽</p>
+                    <p class="ccl_Utext">&lt;지능&gt; 판정</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">cc&lt;=70 지능/아이디어 (1D100&lt;=70) 보너스, 페널티 주사위[0] ＞ 79 ＞ 79 ＞ 실패</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">남자의 생김새가 꼭... 신사에서 일하는 신관과 닮았네요.<br>또한 남자의 손에는 등불이 없습니다.<br>그는 말없이 뚜벅뚜벅 대열 안으로 걸어들어와, 일행의 곁에서 함께 걸어갑니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p000">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/b573342bac333989b9de4b80d1f06d12b26ade228ff481a09a4ec097562a787e?t=1786881433669"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">??</p>
+                    <p class="ccl_Utext">(그리곤 대뜸 에노모토한테 말 건다.) 걷다 보면 힘들지 않으십니까.<br>쉬엄쉬엄 걸어가지요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;뭐 하는 사람, 아니. 뭐 하는 존재입니까, 그쪽은?<br>갑자기 나타나서 말을 걸지 않나, &#183;&#183;&#183;등불도 없고.</p>
+                </div>
+            </div>
+            <div class="ccl_player p000">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/b573342bac333989b9de4b80d1f06d12b26ade228ff481a09a4ec097562a787e?t=1786881433669"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">??</p>
+                    <p class="ccl_Utext">(조용히 웃기만 한다.) 저는 이 대열에 끝까지 함께할 수 없거든요. 이 신사를 벗어날 수 없는 몸이니, 대열에 참여할 수도 없는 고로 등불도 없습니다.<br>비통하기 짝이 없죠. 이 길의 끝에 ‘그 사람’이 있을 게 뻔한데, 갈 수 없다니&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (‘그 사람’?)<br>&#183;&#183;&#183;&#183;&#183;&#183;. (이 녀석이고, 저 녀석이고&#183;&#183;&#183;. 뭐 이렇게 기다리는 것들이 많은지&#183;&#183;&#183;.)<br>도움을 줄 수 있을지, 없을지는 모르겠다만&#183;&#183;&#183;.<br>&#183;&#183;&#183;우린 이 길의 끝으로 향할 예정입니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">그 얘길 들은 남자는 다소 안타까운 어조로 말을 잇습니다.<br>베일로 가려져 표정을 알 순 없지만, 무척이나 괴로워하는 것 같습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p000">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/b573342bac333989b9de4b80d1f06d12b26ade228ff481a09a4ec097562a787e?t=1786881433669"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">??</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;그렇군요.<br>그럼, 죄송하지만 부탁 하나만 드려도 괜찮겠습니까.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;부탁, 이라면?</p>
+                </div>
+            </div>
+            <div class="ccl_player p000">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/b573342bac333989b9de4b80d1f06d12b26ade228ff481a09a4ec097562a787e?t=1786881433669"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">??</p>
+                    <p class="ccl_Utext">길의 끝으로 향하시는 거라면, 충분히 들어주실 수 있는 부탁이라 생각합니다.<br>무리한 건 아니니까&#183;&#183;&#183;&#183;&#183;&#183; 예.<br>제게는 평생을 약속한 정인이 있습니다만, 목숨이 끊겨 더는 만날 수 없는 몸이 되어버렸습니다.<br>정인은 제 죽음을 알지 못한 채 하염없이 기다리고 있는 상태일 거고요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p002">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0fa92fd822e2bcd85822762bec28674e273d650cca7974ec0060f61537213c91?t=1786249808470"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #42bdb5">▽</p>
+                    <p class="ccl_Utext">&lt;지능&gt; 판정</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">cc&lt;=70 지능/아이디어 (1D100&lt;=70) 보너스, 페널티 주사위[0] ＞ 78 ＞ 78 ＞ 실패</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">문득 축제의 연극, ‘신목의 시’를 떠올립니다.<br>남자의 사연이 그 내용과 무척 비슷하단 생각이 듭니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p000">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/b573342bac333989b9de4b80d1f06d12b26ade228ff481a09a4ec097562a787e?t=1786881433669"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">??</p>
+                    <p class="ccl_Utext">다시 만나 얘기하는 건 바라지도 않는데, 하다못해 제가 죽었다는 사실만이라도 전달할 수 있길 바라는데&#183;&#183;&#183;&#183;&#183;&#183;.<br>제겐 이마저도 허락되질 않아서, 대신 부탁을 좀 드리고 싶습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (비슷, 한가? 아니, 어쩌면 이 남자의 이야기일지도&#183;&#183;&#183;. 대답없이 가만 바라보며 걸음을 떼다가 앞으로 고개를 돌린다.) &#183;&#183;&#183;전달할 수 있다면.<br>&#183;&#183;&#183;시도는 해보겠습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">시도는 해보겠다고 말하자, 남자는 크게 기뻐하며 품에서 얇은 종이봉투를 한 장 꺼내 내밉니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p000">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/b573342bac333989b9de4b80d1f06d12b26ade228ff481a09a4ec097562a787e?t=1786881433669"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">??</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;감사합니다, 정말 감사합니다&#183;&#183;&#183;.<br>이 종이를 제 정인에게 전달해주시면 됩니다. 이렇게 길이 열린 건 처음이라, 언제 이런 기회가 올지도 모르니&#183;&#183;&#183; 기회가 닿는다면 꼭 좀, 부탁드리겠습니다&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (봉투를 조용히 받아들어 내려다본다. 이 남자에 대해 아는 거라곤 전해 들은 짧은 이야기를 제외하고 그 무엇도 없지만&#183;&#183;&#183;.)<br>(아무것도 모른 채로 마냥 상대를 기다리기만 하고, 그와의 재회를 바라는 존재에 대한 것은&#183;&#183;&#183; &#183;&#183;&#183;이미 곁에서 보았기에. 답지 않은 동정이나, 위로일지도 모른다.)<br>(그래도 아무것도 해줄 수 없는 그때와 달리, &#183;&#183;&#183;이번에는 이걸 전달하고, 그 기다린 시간을 조금이라도 보상해 주는 게 가능하다면.) &#183;&#183;&#183;알겠습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p000">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/b573342bac333989b9de4b80d1f06d12b26ade228ff481a09a4ec097562a787e?t=1786881433669"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">??</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;다소 뜬금없는 서두라고 느끼실 수도 있긴 합니다만.<br>당신만큼 &#39;인연&#39;이 질기다고 느껴지는 영혼은 여기 없는 것 같군요. (웃었다.)<br>부럽습니다, 정말로. 그럼&#183;&#183;&#183; 잘 좀 부탁드리겠습니다. (허리 숙여 인사했다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;그런 이야기라면 이제&#183;&#183;&#183;. (지긋지긋합니다. 짧게 눈을 감았다가 뜬다. 그놈의 ‘인연’이란 무엇이길래 이리도 힘들어야 했는지.)<br>(여전히 보폭을 유지한 채로 걷는다. 지친 기색은 몸이 아니라, 마음에서 나오는 것일지도 모른다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">종이봉투는 한없이 가벼워 무엇이 들었는지 전혀 짐작 가지 않습니다.<br>당신이 이에 응하면 남자는 고개 숙여 감사를 표하고, 어린 나오는 그 모습을 옆에서 가만히 지켜봅니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(그리곤 잡은 손에 힘준다.) 궁금한 게 있는데, 오빠도 인연이 있어요?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;나한테도 인연이 있냐고? (제 손에 실린 힘을 느끼고 고개를 아래로 내린다.)<br>글쎄다&#183;&#183;&#183;. (그러다 다시 허공으로 시선을 든다.) 없는 줄 알았는데.<br>살다 보니 생기더라고&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">헤에, 그렇구나&#183;&#183;&#183;&#183;&#183;&#183;. (물끄럼, 마주 본다.)<br>오빠한테 찾아온 인연도 멋진 인연이에요? 후회하지 않을 정도로?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">차마, 멋지다고는 못하겠네&#183;&#183;&#183;. (우리 인연은 원하는 대상이 아니었거니와, 마치 잘못 꿰인 단추와 같았고, 기억의 전부를 들어내야 할 정도로&#183;&#183;&#183; 한 번 비참했었으니. &#183;&#183;&#183;그 고생 끝에 다시 맞물린 인연은.) &#183;&#183;&#183;후회하지 않지만, 안타까운 쪽일지도.<br>&#183;&#183;&#183;조금 더, 좋은 방법이 있었지 않을까. 라는 생각이 들어서.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;으음, 되게 어려운 말. (후회하진 않지만 안타까운 인연이란 문장을 이해할 수 있을 정도로 삶을 산 건 아닌지라.)<br>쉽게 말해서 좋은 인연이긴 하되, 빙 둘러서 만났다- 이거인 거죠?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;어려웠나? (어린 아이가 이해하려면 이쪽이 나을 것 같으니.) 뭐, 그렇다고 해야겠지.<br>그래서 &#183;&#183;&#183;차마 멋진 인연이라고는 못하겠어. 입에 발린 말이라도.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">그렇구나아. (끔뻑, 감았다 뜨길 연신 반복한다.)<br>나오는 오빠를 오래 봐온 건 아니지마안, 비록 오늘 처음 봤지만.<br>오빠는 되게 좋은 사람이니까. 처음 보는 저한테도 막 친절하게 대해주고, 자상하고, 다정하구.<br>그러니까, 오빠한테 찾아온 인연이란 그 사람은 오빠랑 만난 걸 후회하지 않을 거 같단 생각이 들어요.<br>나오는 그랬을 거 같아. 오빠랑 인연이었으면 되게 기뻤을 거 같아. (헤헤.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (어린 아이의 시선에서는 제가 그렇게 다가올 수 있는 걸까, 라는 감상만 들었다. 그 어떤 것도, &#183;&#183;&#183;평소의 제가 받는 평가는 아니었으니까.)<br>(그저 할아버지와 닮아서, 할아버지와 비슷한 느낌이니까, 그리고&#183;&#183;&#183; 어린 아이한테 모지게 굴 이유가 없어서. 그저 그렇게 대했을 뿐인데&#183;&#183;&#183;. 하는 이야기들을 들으며 눈만 깜빡일 뿐 아무런 말이 없다가&#183;&#183;&#183;&#183;&#183;&#183;.)<br>&#183;&#183;&#183;그렇게 말해 주면, 다행이네. 진짜로 그런지는, 상대방에게서 들어봐야 하겠지만. (그래도 같은 존재이니, 비슷한 생각을 하진 않았을까. 하고 넘긴다. 이후에 아니라고 한다면&#183;&#183;&#183; &#183;&#183;&#183;어린 상대가 한 말을 걸고 넘어지지 뭐.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">상대방도 분명 그렇게 생각할 것 같은데! 오빠 같은 인연은 흔치 않다고 생각하거든요.<br>나오, 비록 아직은 어리지만 사람 보는 눈은 꽤 좋다고 얘길 많이 들었어요. 그러니까 오빠도 분명 좋은 인연의 축에 속하리라 생각해.<br>(해맑게 웃는다. 작디 작은 손으로 한참이나 큰 손을 그러쥐곤 흔들었다.)<br>나오가 조금만 더 나이가 많았더라면 좋았을 텐데, 그럼 오빠한테 시집갈 수 있었을 거 같아서! (여즉 웃는 낯이다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;사람 보는 눈이 좋다고들 해? 내가 보기엔 조금 더 키워야 할 거 같은데? (네 칭찬에 부러 짓궂게 그런 말이나 던진다.)<br>글쎄다. 내가 결혼에는 관심이 없어서&#183;&#183;&#183;. (음. &#183;&#183;&#183;진짜로. 오히려 이 나이대여서 다행이지.)<br>&#183;&#183;&#183;. (그리고 멀리 떨어진 시즈사와나 한 번 살피고 다시 고개 돌린다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(아, 진짜 위가 아프다&#183;&#183;&#183;&#183;&#183;&#183;.)<br>(나도 동감한다. 과거의 나는 사람 보는 눈 좀 기를 필요가 있는 것 같다&#183;&#183;&#183;&#183;&#183;&#183;.)<br>(좋은 사람인 거랑 별개로 결혼 상대는 진짜 아니다, 이것아&#183;&#183;&#183;&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(모르겠고 시무룩해진다.) 아닌데, 나오 사람 보는 눈 좋은데에&#183;&#183;&#183;&#183;&#183;&#183;.<br>결혼엔 관심 없는 거면, 이따 나오랑 같이 돌아가면 안돼요? 옆에 있기만 해도 괜찮은데.<br>응? 안 돼? (초롱초롱&#183;&#183;&#183;)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;조금 더 살다 보면, 이해하게 될걸. 나보다 좋은 요괴가 있을 거라는 거. (음&#183;&#183;&#183;.)<br>착하게 말 잘 들으면, 생각해 볼게.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">오빠보다 좋은 요괴는 없을 거 같은데, 선생님만큼 좋은 사람도 없으니까&#183;&#183;&#183;&#183;&#183;&#183;.<br>(잇따른 말엔 다소 의기 투합한다.) &#183;&#183;&#183;&#183;&#183;&#183;!!<br>정말이죠? 착하게 말 잘 들으면 생각해 본다고 한 거야, 분명&#183;&#183;&#183;!</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (다소 씁쓸하게 입꼬리를 올리더니 머리를 쓰다듬어준다. 그게 가능하다면&#183;&#183;&#183;.) 그래.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(내 과거의 행실을 도저히 눈 뜨고 봐줄 수가 없어서 앞장 서기로 한다.)<br>(에노모토 옆 지나가면서 손등 툭&#183;&#183;&#183; 치곤.) &#183;&#183;&#183;&#183;&#183;&#183;.<br>(입모양만 벙긋거린다. &#39;시종일관 무시해, 제발&#183;&#183;&#183;&#183;&#183;&#183;.&#39;)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(손등이 건드려지자 그쪽으로 고개 돌린다. 이내 입을 열고서. ‘애잖아.’ 라고 말한 뒤 고민하는 듯&#183;&#183;&#183; 한 번 더 입을 뗀다.)<br>(‘네 쪽을?’)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;.<br>(빈정 상했다. 입 뗀다.)<br>(&#39;&#183;&#183;&#183;&#183;&#183;&#183;그러던가.&#39;)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">다 큰 나오가 앞질러서 가버립니다....</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">어라아, 저 사람 엄청 빨리 간다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (몸만 컸다니까. 한숨을 내쉰다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">이윽고 행렬이 계단의 끝에 도달할 무렵, 신관은 대열에서 이탈해 조용히 당신들이 떠나는 모습을 지켜봅니다.<br>마지막 요괴가 토리이를 통과하면, 주변 풍경이 또다시 변화합니다<br>이곳은 당신이 사는 동네, 인계입니다.<br>다만 사람의 흔적이라곤 조금도 찾아볼 수 없으며, 적막만이 감돌고 있습니다.<br>당신을 제외한 인계의 주민들 역시 다른 곳으로 흘러가 버린 걸까요?<br>주택가를 지나칠 무렵, 몇몇 요괴들이 창문을 깨며 장난치는 모습을 목격할 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(움찔, 큰 소리에 에노모토한테 찰싹 붙는다&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (이상한 일이네. 이렇게까지&#183;&#183;&#183;. 어린 시즈사와 어깨에 가볍게 손 올린다.) 사람의 기척이 없다니.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">인계엔 원래 사람이 많아요? (끔뻑.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;그래. 점점 늘어나고 있지. 감당하기 어려울 정도로. (장난치는 요괴들을 보며 한숨을 내쉰다. 뭐라 할 수도 없고.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">이계도 그런데, 인계도 마찬가지구나&#183;&#183;&#183;&#183;&#183;&#183;. (깨지는 소리가 들리는 곳에선 시선 돌린다. 그리곤 잡고 있는 에노모토 손만 물끄럼, 봤다.)<br>&#183;&#183;&#183;&#183;&#183;&#183;.<br>여기가 인계인 거면, 선생님도 이곳에 계시는 걸까요? 선생님, 인계에서 왔다고 했는데.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;.<br>&#183;&#183;&#183;&#183;&#183;&#183;. (이걸 어쩐다.)<br>&#183;&#183;&#183;어딘가에, 있겠지. 인계는 매우 넓으니까.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(말하는 걸 듣자 하니 오늘 내로 찾는 건 힘들겠네, 포기했다.)<br>&#183;&#183;&#183;선생님이, 선생님이 이계로 다시 오시는 일은 없겠죠&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">가령&#183;&#183;&#183;, 예를 들면.<br>네가 내 손을 놓고 선생님을 찾겠다고 달려나가면, 영영 집에 못 돌아오게 될지도 모를 정도로 넓다고 해야겠지.<br>&#183;&#183;&#183;건강해지면 다시 나타나지 않으려나 싶은데. 물론, 그때가 언제인지&#183;&#183;&#183; 나도 모르지만.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (듣자마자 부러 꼬옥, 쥔다.)<br>어딨는지도 모르면서 놓아버리면 오빠도 놓치는 거잖아, 그건 싫어&#183;&#183;&#183;.<br>그냥, 말마따나 건강해져서 다시 찾아오실 때까지 기다릴래. (기약없는 기다림은 익숙하니까. 그리 생각하며 무턱대고 보이는 사물 하나 가리킨다. 화제 돌리기 용이다.)<br>근데, 저건 뭐예요? 신기하게 생겼어.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">나오가 가리킨 건 버스네요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;저거?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">응, 저거.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;아. (음. 말해도 되나? 3초 정도 고민하다가&#183;&#183;&#183;.) &#183;&#183;&#183;버스라는 거야.<br>인간들은 오래 걷기 힘들고, 너무 먼 곳은 마음처럼 쉽게 갈 수 없어. 하다 못해 산을 넘는 것도 어려울 때가 있지.<br>그런 인간을 위해 만들어졌다고 해야 할까&#183;&#183;&#183;. 돈만 내면 어디든 갈 수 있어. 너만 태우지 않고, 네가 스무 명이 있어도 태우고 갈 수 있어.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(산을 넘는 게 왜 어렵지? 먼 곳은 요술을 쓰면 되는 거 아닌가? 의아하다.)<br>(강아지로 변하면 달리는 거도 쉽던데, 인간들은 신기하네&#183;&#183;&#183;.)<br>스무 명이나요? 무지 많이 태울 수 있구나아&#183;&#183;&#183;&#183;&#183;&#183;.<br>그럼 저건요? 저건 감옥처럼 생겼는데, 맞아요? (학교 가리켰다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;음. (맞는 말이긴 한데, 그&#183;&#183;&#183;.) &#183;&#183;&#183;아니, 감옥은 아니고.<br>&#183;&#183;&#183;이계의 영월호와 비슷하다고 생각하면 돼.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">영월호? 그럼 저긴 감옥이 아니라 학생들을 가르치는 곳이에요?<br>생긴 건 꼭 수감자들이 들어갈 것처럼 생겼는데에&#183;&#183;&#183;?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;수감자들이 어떻게 생겼는지는 알고 있고? (황당하네&#183;&#183;&#183;.) 그래, 저긴 학생들을 가르치는 곳이야.<br>뭐, 고통받는 건 비슷하지만.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">선생님이 알려줬어요. 무지 험악하고, 못됐고, 나쁘고, 이기적이게 생겼으면 수감자랬어.<br>누가 봐도 다른 사람들 괴롭히게 생겼으면 피하라고 알려주셔서, 그래서 알아요. (고통받는 건 비슷하다고? 영월호에선 고통 받은 기억이 없는데, 이 또한 의아하다.)<br>근데, 궁금한 게 또 있는데요&#183;&#183;&#183;&#183;&#183;&#183;.<br>오빠는 이걸 어떻게 다 알아요?<br>되게 자세하게 알고 있다, 신기해.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(애한테 뭘 가르친 거야, 이 영감탱이가&#183;&#183;&#183;.)<br>(별걸 다 가르쳤구나 싶어 말이 없다가&#183;&#183;&#183;.) &#183;&#183;&#183;이만큼 살다 보면 알게 되는 것들이지.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;오빠만큼 살면 인계에 대해서 많이 알 수 있어요?<br>나오도 조금 더 크면 선생님이 사는 세계를 알 수 있을까&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">그렇게 알고 싶어?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(끄덕인다.) 네, 알고 싶어요&#183;&#183;&#183;&#183;&#183;&#183;.<br>선생님이 사는 세계에 대해 나오가 조금 더 잘 알게 되면, 이계랑 인계의 공통점을 찾을 수 있지 않을까 싶어서.<br>그러다 보면 이계로 선생님이 다시 오는 방법을 찾을 수 있을지도 모르니까&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;그래, 그럴지도 모르겠네.<br>아마&#183;&#183;&#183;, 점점 알게 될 거야. 그렇게 알고 싶어하다 보면.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">어린 나오는 고갤 끄덕입니다.<br>새삼 어린아이의 예리함은 만만하게 볼만한 게 아니라는 교훈을 얻습니다.<br>행렬은 순조롭게 이어집니다.<br>요괴들은 불이 꺼진 도심 한가운데, 붉은 불이 켜진 신호등을 무시하고 건널목을 건너갑니다.<br>깜빡, 깜빡. 강한 요기를 감지한 건지, 행렬이 지나가는 곳의 가로등은 고장 난 것처럼 점멸합니다.<br>시멘트는 독기에 녹아버리고, 가로수가 시듭니다.<br>백귀야행이 옮겨간 장소마다 엉망으로 변하고 있습니다.<br>행렬에 지쳐가는 요괴들이 늘 무렵, 행렬에 있던 요괴 중 하나가 가판대를 펼쳐 들고 다니며 간식을 판매합니다.<br>당연히 대부분이 도마뱀 구이나 메뚜기 튀김 같은 것들이지만, 반갑게도 약과와 사과 사탕을 팔고 있습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(사과 사탕 빤히 본다&#183;&#183;&#183;&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;뭐가 먹고 싶은데?</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">저거어&#183;&#183;&#183;&#183;&#183;&#183;. (사탕 가리켰다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;. (하&#183;&#183;&#183;, 곤란하게 됐네. 인계의 물건이었으면 아무렇지 않았을 텐데. 뒷목이나 한 번 긁고는 조금 앞으로 가버린 시즈사와에게 다가가 어깨를 두드린다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;? (그제야 뒤돈다.)<br>(끔뻑.) &#183;&#183;&#183;뭐야, 갑자기?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;어린 &#183;&#183;&#183;가, &#183;&#183;&#183;저게 먹고 싶다고 해서. (가판대 위에 사과사탕을 가리킨다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;어린, 뭐? 잘 안 들려&#183;&#183;&#183;. (인파 때문에 진짜 안 들린다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (조금 더 가까이 다가가 귓가에 대고 말한다.) 어린 네가 먹고 싶어한다고. 사과 사탕.<br>(그렇게 전달하고 나면 고개를 뒤로 물린다.) &#183;&#183;&#183;근데 알다시피, 내가 이계 돈은 없어서.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;아.<br>어린 게 뭐 이렇게 바라는 게 많아, 진짜&#183;&#183;&#183;&#183;&#183;&#183;.<br>(유카타 뒤에 매달린 작은 주머니 가방 뒤적인다. 이계 돈 조금 꺼내선 건넸다.)<br>이거면 되려나. 아니, 애당초 행진하면서 저걸 왜 먹고 싶어하냐고&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;낸들 알겠냐고. (건넨 돈을 받아들고 작게 한숨 쉰다.) 그러게 왜 애 앞에서 저런 걸 팔아서는.<br>(받은 돈으로 사과 사탕을 사기로 한다. 진짜 애 키우는 기분이 드는데&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">뭐, 애들도 있으니까 저런 걸 노리고 파는 거겠다만&#183;&#183;&#183;&#183;&#183;&#183;.<br>(사탕 사는 모습 지켜본다. 저걸 어린 내가 쥔다고 생각하니까 또 기분이 참&#183;&#183;&#183;&#183;&#183;&#183;.)<br>(이 망할 행진 언제 끝나.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">장수는 당신에게 돈을 받고, 사탕 하나를 건넵니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(사탕을 건네받으면 그걸 어린 시즈사와에게 내민다.) 자. 조심히 들고.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(&#183;&#183;&#183;!) 이, 이거 제가 받아도 돼요?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">응, 네가 바라는 거 같아서 사온 거니까.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(그럼 얼떨결에 받아든다. 기쁜 표정 한 번&#183;&#183;&#183;) &#183;&#183;&#183;고마워요, 오빠!</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;아까 앞서 가던 누나한테 고맙다고 하면 될 거 같네.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">앞서 가던 누나? (오빠한테 누나인 거면 나한텐 언니인 건가&#183;&#183;&#183;?)<br>(앞에 있던 인영 본다. 빤히&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">(절대 뒤 안 돌아본다. 절대로&#183;&#183;&#183;.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">돈은 늘 그렇듯 다 큰 나오가 지급합니다.<br>달콤한 간식을 물고 주변을 둘러보면, 검은 하늘, 어두침침한 거리, 빼곡한 요괴들, 어린 나오, 당신을 둘러싼 모든 것들이 비현실적으로만 와닿습니다.<br>그리고, 행렬은 마침내 길의 끝에 도달합니다.<br>또다시 새빨간 토리이, 그리고 신사가 일행을 반깁니다.<br>아까처럼 길게 늘어지는 돌계단은 없지만, 특이하게도 토리이가 거꾸로 뒤집힌 채 매달려 있습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p002">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0fa92fd822e2bcd85822762bec28674e273d650cca7974ec0060f61537213c91?t=1786249808470"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #42bdb5">▽</p>
+                    <p class="ccl_Utext">&lt;이성&gt; 판정</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">cc&lt;=59 이성 (1D100&lt;=59) 보너스, 페널티 주사위[0] ＞ 24 ＞ 24 ＞ 어려운 성공</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">토리이 뿐만이 아닙니다.<br>모든 풍경이 반대로 뒤집혀 있습니다.<br>하늘을 올려다보면, 아름다운 연못 위로 붉은 다리가 세워져 있습니다.<br>잘 관리된 연꽃과 비단잉어가 돋보입니다. 푸른 정원은 어떻고요.<br>뒤집혀 있음에도 밤하늘은 여전히 존재합니다.<br>하늘은 고요하며, 인기척은 조금도 느껴지지 않습니다.<br>요괴들은 걸음을 멈추고 들고 다니던 등불을 바닥에 내려놓습니다.<br>그러자, 마치 하늘 위로 연을 날려 보내듯 등불이 떠오르기 시작합니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p002">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0fa92fd822e2bcd85822762bec28674e273d650cca7974ec0060f61537213c91?t=1786249808470"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #42bdb5">▽</p>
+                    <p class="ccl_Utext">새빨간 등불이 검은 밤하늘을 메우며 날아갑니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">하나하나가 검은 물을 헤엄치는 금붕어처럼 살랑이며 떠오릅니다.<br>꿈처럼 환상적인 풍경입니다.<br>어른인 나오도, 아이인 나오도 다른 요괴들을 따라 등불을 떠나보냅니다.<br>당신 역시 등불을 떠나보내려던 그때, 품에서 아까의 봉투가 미끄러집니다.<br>그러고 보니, 이걸 잊을 뻔했군요. 신사의 남자가 부탁한 편지 말이에요.<br>하지만, 그의 정인은 얼굴은커녕 머리카락 한 올 내비치지 않는데...<br>어떻게 해야 이 봉투를 전달할 수 있을까요?<br></p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;아. (품안에 있던 봉투를 다시 마주하고서야&#183;&#183;&#183; 아직 떠나보내지 못한 등불과 번갈아서 쳐다본다.)<br>&#183;&#183;&#183;&#183;&#183;&#183;. (분명, 이렇게 등불을 띄우면&#183;&#183;&#183; 저 뒤집힌 하늘에 닿을 테지. 그렇다면&#183;&#183;&#183;.)<br>(등불에 편지 봉투를 싣고, 하늘에 띄워 제 손에서 떠나보내기로 한다. 직접 전달할 수 없으니.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">시간이 얼마나 지났을까요, 등불이 차츰차츰 멀어져 보이지 않게 될 무렵.<br>하늘에서부터 비가 내리기 시작합니다.<br>갑자기 쏟아지는 폭우에 요괴들은 이리저리 흩어져 비를 피할 곳을 찾습니다.<br>그리고, 당신은 봅니다.<br>빗속에서 홀로 서서 편지를 읽는 여인을요.<br>얇은 무녀복을 입은 여인은, 몇 번이고 몇 번이고 적힌 내용을 눈으로 쓰다듬습니다.<br>그는 웃고 있던가요, 울고 있던가요?</p>
+                </div>
+            </div>
+            <div class="ccl_player p008">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0a848d076e7fdb42fe222562e677372040b97729e73f697a21a706a9cb4c6d72?t=1786881751535"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">신관의 정인</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;그랬구나, 당신은 줄곧 그곳에 있었구나.<br>아직도 저를 잊지 못하고, 한을 품은 채로&#183;&#183;&#183;&#183;&#183;&#183;.<br>&#183;&#183;&#183;&#183;&#183;&#183;닿아서 다행이다. 보고 싶었어요. 정말로 보고 싶었어서&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">닿을 리 없는 목소리만이 공허하게 울려 퍼집니다.<br>차가운 비는 바닥을 적시고 세계를 녹입니다.<br>모든 것이 허상이었던 것처럼, 뒤틀린 혼란이 가라앉고, 시공간이 원래대로 돌아오기 시작합니다.<br>백 마리 남짓의 요괴들이 하나씩 사라져갑니다.<br>있어야 할 곳으로 돌아간 거겠죠.<br>당신 역시 몸의 이변을 느낍니다.<br>이제 당신은 어른인 나오와 함께, 원래의 평온한 인계로 돌아갈 것입니다<br>여인의 모습을 바라보던 어린 나오는 다급하게 고개를 돌려 당신을 바라봅니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">자, 잠깐만&#183;&#183;&#183;&#183;&#183;&#183;!!</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">어린 나오는, 직감적으로 이제 이별임을 깨달은 것 같습니다.<br>당신은 돌아가면 만날 수 있는 여타 요괴들과 다르다는 걸요.<br>그는 당신이 완전히 멀어지기 전에 손을 붙잡고, 당신에게 마지막 질문을 던집니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;기다리고, 그리워하면 언젠가는 다시 만날 수 있는 걸까요?<br>&#183;&#183;&#183;&#183;&#183;&#183;선생님은 아무리 기다려도 오지 않던데, 오빠도 마찬가지면?<br>&#183;&#183;&#183;&#183;&#183;&#183;그럼 나는 어떻게 해야 해? 싫어, 보내기 싫어&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (지금 제 말이, 너에게 어떤 소용이 있을까. 네 말처럼 기다리는 선생은 오지 않고, &#183;&#183;&#183;진실을 알고 있는 저는 너에게 숨겨버렸는데. 그런 제가&#183;&#183;&#183;&#183;&#183;&#183;.)<br>(차마 기다리지 말라고, 그리워하지 말라는 말이 목전까지 차고 올라오지만&#183;&#183;&#183;.)<br>(지금 어린 너는 모를 테지만, &#183;&#183;&#183;우리는 언젠가 닿았으니. 그저 잡힌 손을 내려다보다가 살포시 그 손을 풀어 반대로 제가 잡는다.) &#183;&#183;&#183;만날 수 있을 거다.<br>위로하려고 하는 말이 아니야. (애초에 그런 거, 못하는 사람이고.) 다시 만날 수 있어. 지금은&#183;&#183;&#183;&#183;&#183;&#183;.<br>너무 빨리 만난 거라고 해야겠지.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">(반대로 잡힌 손을 한참동안 내려다보았다. 놓아야 한다는 걸 알면서도 놓을 수가 없었다. 어린 아이에게 이별은 아직 익숙치가 않아서&#183;&#183;&#183;&#183;&#183;&#183;.)<br>&#183;&#183;&#183;&#183;&#183;&#183;지금 보내면, 오빠를 언제 다시 만날 수 있다고 확신할 순 없는 거잖아.<br>나오, 기다리는 건 잘해. 자신 있어.<br>선생님도 언젠가는 돌아올 거라고 생각하면서 기다리고, 또 기다렸어.<br>그치만 끝이 보이지 않는 기다림은 나한텐 조금 버거운 것 같단 말이야&#183;&#183;&#183;&#183;&#183;&#183;. (어린 마음에도 영락없이 힘든 건 존재하기 마련이다. 때문인지 말끝이 작게 떨리고, 울지 않으려고 애써 웃어 보이지만 손만큼은 쉬이 놓질 못했다.)<br>&#183;&#183;&#183;&#183;&#183;&#183;너무 빨리 만났다는 말도 잘 모르곘어. 오빠가 하는 말, 너무 어려워.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (네가 놓지 못하는 손을, 반대로 제가 놓을 수 있게 힘을 천천히 푼다. 어린 아이가 감당하기엔 상실의 깊이가 클 테니, 미처 말하지 못했다. 저에게 있어 간단한 이야기라도, 너에게는 지금처럼 이해하기 어려울 테니까.) &#183;&#183;&#183;기억을 잃지 않는다면.<br>계속 떠올리고, 그리워하다 보면, &#183;&#183;&#183;그 바람은 네가 닿고자 하는 결실에 닿을 수 있을 거야.<br>&#183;&#183;&#183;만날 수 있어.<br>나는, 선생님과 다르게 약속을 지킬 수 있다고&#183;&#183;&#183;, 말해 줄게.<br>그러니까 울지 마.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;정말?<br>(잇따른 말에 억지로 붙잡지 않는다. 대신 남은 온기를 오래도록 기억해두고자 몇 번이고 쓸어만지고, 눈에 담고자 내려다볼 뿐이다.)<br>기억하면&#183;&#183;&#183;&#183;&#183;&#183; 계속 생각하고, 계속 그리워하면, 다시 만날 수 있어?<br>&#183;&#183;&#183;&#183;&#183;&#183;너무 빨리 만났다는 말은, 반대로 나중에 또 만날 수 있다는 거지?<br>지금은 나오랑 오빠가 만날 때가 아니라는 거니까, 그때가 오면 다시 오빠랑 재회할 수 있는 거지?<br>(눈물을 억지로 참느라 눈가가 다소 붉다. 허나 웃는 태는 그대로다.)<br>그럼 나오, 믿어볼게. 오빠는 다정하니까, 친절하니까, 거짓말을 할 것 같진 않으니까.<br>대신 약속했으니까 꼭 지켜야 해. 이따가 나오 만나러 또 와야 해, 꼭&#183;&#183;&#183;&#183;&#183;&#183;.<br>(소지 내민다.) &#183;&#183;&#183;&#183;&#183;&#183;약속!</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (아마, 이계로 따지자면 몇백 년이 더 걸릴 테지. 그럼에도, &#183;&#183;&#183;계속 만나고자 한다면&#183;&#183;&#183;. 우리의 미래는 변하지 않을 테니까.)<br>&#183;&#183;&#183;무슨 어린애가 이렇게. (끝내 말은 다 이어지지 못하고 허공으로 흩어진다. 네가 내민 손가락에 제 소지를 걸고 엄지나 한 번 꾹 마주대었다 떨어진다.) 그래, 약속이야.<br>다음에 만나면, &#183;&#183;&#183;사람 보는 눈을 더 키워서 보게 되겠네.<br>&#183;&#183;&#183;나중에 다시 만나. 조금 더 커서.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (잠시 눈을 동그랗게 뜨고 바라본다. 그러다 작게 웃음을 터뜨리곤&#183;&#183;&#183;)<br>(맞댄 손가락에 남은 온기라도 확인하고자 들 듯이 제 손을 한참동안 응시했다.)<br>사람 보는 눈을 키웠을지는 잘 모르겠어. 왜냐면, 왜냐면&#183;&#183;&#183;.<br>나오, 지금도 충분히 사람을 잘 본다고 단언할 수 있으니까!<br>이미 완성형이라 더 늘릴 거도 없어. 확신해. 오빠를 만났으니까.<br>&#183;&#183;&#183;&#183;&#183;&#183;그러니까, 다시 만날 날만 기다리고 있을게!<br>조금 더 커서, 나오가 먼저 오빠를 알아볼 테니까 대답해주기야?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (저를 만났으니까. 확신이 담긴 그 자만 가득한 말에 결국 조용히 입꼬리를 올린다. 그래, 그래&#183;&#183;&#183;. 어련하겠어. 더는 아니라고 말할 수 없이 제 두 손을 들게 한다.)<br>&#183;&#183;&#183;알아보기나 할는지 모르겠는데.<br>그래. 기억했다가, 아는 척하러 와.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;알아볼 거야!<br>나, 오빠도 내 인연으로 정했으니까! (헤헤, 웃으며 비로소 놓았다.)<br>기다린 만큼 분명 마음도 보답할 거라 믿어. 잊지 않았을 거야.<br>잊을 수가 없을 거라는 확신이 들어. 오빠, 잊혀지긴 힘든 사람인 것 같거든.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;. (기이한 일이네. 잊혀지기 힘든 사람이라는 건, 뭘까. 그 누구보다 잊혀지고 싶어서 곁에 무엇도 두지 않았었는데. 이런 직접적인 평가는, 낯설다.)<br>&#183;&#183;&#183;그래. 그 마음에 보답&#183;&#183;&#183;, 해달라고 해. 다시 만나면. 얼마나, 어떻게 기다렸는지 이야기하고.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">어린 나오는 가만히 당신을 바라보다 희미하게 웃음을 지어 보입니다.<br>빗물에 휩쓸려 지면과 하늘의 경계가 흐려지고, 당신의 눈앞까지 뿌옇게 멀어집니다.<br>그 속에서 마지막으로 당신은 듣습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p008">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0a848d076e7fdb42fe222562e677372040b97729e73f697a21a706a9cb4c6d72?t=1786881751535"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">신관의 정인</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;고마워요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p009">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/9815c3361410ff9d27581e11aa300ccb1528ddf9ab0a0f458c37c1c0f00bc029?t=1786870134957"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #888888">어린 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;고마워, 오빠!</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">겹쳐진 채로 울리는 두 사람분의 목소리를요.<br>굉장히 슬픈 목소리였지만, 그건 결코 나쁜 결말이 아니었습니다.<br>어떤 비통한 이야기는 이로써 평온하게 끝을 맞이합니다.<br>.....<br>당신이 다시 정신을 차리면, 처음 눈을 떴던 침대 위입니다.<br>옷은 여전히 축제 복장이지만요.<br>나오는 여전히 가면을 쓴 채로 당신의 머리맡에 앉아있습니다.<br>그는 가면을 벗으며 아이 같은 얼굴로 웃습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#39;기억했다가, 아는 척하러 와.&#39;<br>&#39;그 마음에 보답 해달라고 해.&#39;<br>&#39;다시 만나면 얼마나, 어떻게 기다렸는지 이야기 하고&#183;&#183;&#183;&#183;&#183;&#183;.&#39;<br>&#183;&#183;&#183;&#183;&#183;&#183;아는 척하러 왔는데, 반갑나?</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;어이가 없어서. (헛웃음을 한 번 흘리더니, 바닥을 짚고 일어나 앉았다.)<br>글쎄? 생각처럼 막 반갑지는 않을지도? (가벼운 투로, 마음에도 없는 소리나 던지며 어깨를 으쓱인다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">에, 반갑지 않으면 다시 만나러 온 이유가 없는데&#183;&#183;&#183;&#183;&#183;&#183;.<br>&#183;&#183;&#183;&#183;&#183;&#183;그럼, 나 돌아가? (마찬가지로 가벼운 투다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">어디로 돌아가게? 갈 곳은 있고?</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;없긴 해? 누가 어린 시절의 나를 완전히 저당 잡아주신 덕분에.<br>마음은 이어진다더니, 틀린 말은 아니긴 한 모양이다. (괜히 네 이마 꾹.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">(제 이마 누르는 네 손 살며시 붙잡아 내린다.) 그래서? 갈 곳도 없겠다, 그 이야기나 좀 들어봐야 할 거 같은데?<br>마침 이야기 할 장소도 있으니까. (제 집이나 둘러보다가 시즈사와에게로 시선이 멈춘다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">헤에&#183;&#183;&#183; 궁금하긴 한 모양이네? 근데 맨날 듣던 얘기 뿐이라 지겨울 텐데, 각오는 되어 계실라나 몰라. (가벼이 웃는 낯이다.)<br>(이윽고 마찬가지로 에노모토에게로 시선이 멈춘다.) &#183;&#183;&#183;&#183;&#183;&#183;뭐, 약속은 지켜야 하니까!<br>대신 듣다가 지겹다고 졸기 없기, 이것도 약속.</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;음. (이번에는 먼저 시선 피한다. 물론 손가락도 내밀지 않은 채다.)</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">&#183;&#183;&#183;&#183;&#183;&#183;.<br>싫어? (물끄럼&#183;&#183;&#183;&#183;&#183;&#183;)</p>
+                </div>
+            </div>
+            <div class="ccl_player p010">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/bVC9zpgTd7eY7OyUSjlJJRsvyh63/files/44a9034bcabe9a411cba3e699465c890ee1d3e87f534daaff16263056acab47d?t=1786871624694"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #555bc1">에노모토 신야</p>
+                    <p class="ccl_Utext">그렇게 하나 하나 다 진짜로 받아들여서 어떡하냐? (네 이마 가볍게 꾹, 밀고 다시 눈 마주친다.)<br>당연히 장난이지.<br>해야 할 이야기도, 들어야 할 이야기도 많으니까 준비물이 필요하겠네.</p>
+                </div>
+            </div>
+            <div class="ccl_player p007">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/1572fd7550526f8c658b44fa1e5a592b5f1d0c8ddcbe7e0c1840097d307bb25f?t=1786869941636"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffb8c9">시즈사와 나오</p>
+                    <p class="ccl_Utext">제대로 말해주지 않으면 모르는 거, 알면서&#183;&#183;&#183;&#183;&#183;&#183;.<br>(누르는 대로 밀려난다. 다시금 마주한 것엔 이채가 돈다.)<br>&#183;&#183;&#183;&#183;&#183;&#183;응! 오늘 하루를 꼬박 지새도 부족할 테니까!</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">편지에는 뭐라고 적혀 있었을까요?<br>구구절절하게 사정을 적은 긴 편지였을 수도 있습니다.<br>하지만, 두 사람에게는 백지 편지로도 충분했겠지요.<br>적지 않아도 전해지는 마음이라는 건 분명히 존재하니까.<br>지금의 우리 두 사람처럼요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p002">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/0fa92fd822e2bcd85822762bec28674e273d650cca7974ec0060f61537213c91?t=1786249808470"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #42bdb5">▽</p>
+                    <p class="ccl_Utext">이는 결국에는 기다림, 그리고 인연에 관한 이야기입니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">끝이란 결국 새로운 시작, 끝이 존재하기 때문에 우리는 재회를 기약할 수 있습니다.<br>만남은 언제나 영원하진 않지만. 서로의 곁을 나란히 하던 걸음도 언젠가는 멈추고, 함께 바라보던 풍경도 어느 순간에는 각자의 것이 되고 말겠지만.<br>그럼에도 우리가 인연을 야기할 수 있는 것은, 끝이 존재하기에.<br>오늘의 마지막이 있기에 내일의 만남을 기다릴 수 있고, 지금의 이별이 있기에 언젠가 다시 마주할 날을 약속할 수 있는 우리를 인연이라 통칭하기로 했으니.<br>아주 멀리 떨어져 있더라도, 한 번 맺어진 인연은 쉽게 사그라들지 않습니다.<br>기억하고, 그리워하고, 다시 만나기를 기원하면 그 인연은 여전히 서로를 향한 길이 되어줄 거예요.</p>
+                </div>
+            </div>
+            <div class="ccl_player p004">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #cddc39">10月のホクル</p>
+                    <p class="ccl_Utext">그러니 이 길을 따라가 봅시다.<br>지금은 보이지 않더라도, 그 끝에는 가장 아름다운 광경이 약속되어 있을 테니.<br>긴 여정의 끝에서 우리가 다시 마주할 수 있다면, 그곳은 끝이 아니라 또 다른 이야기의 첫 장이 될 테니&#183;&#183;&#183;&#183;&#183;&#183;.</p>
+                </div>
+            </div>
+            <div class="ccl_player p013">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #8bc34a">満月の花火</p>
+                    <p class="ccl_Utext">그러니 부디 기다려주세요.<br>저는 당신과 다시 한번 만나고 싶습니다.<br>언젠가 다시 서로의 이름을 부를 수 있는 날을, 서로의 눈을 마주하고 웃을 수 있는 날을 고대하고 있을 테니까.</p>
+                </div>
+            </div>
+            <div class="ccl_player p006">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #4caf50">百鬼夜行の夜</p>
+                    <p class="ccl_Utext">만일 그 날이 온다면, 기나긴 여정의 끝이라 지칭하지 말고.<br>우리 두 사람의 새로운 여정이 시작되었노라 이름 붙여 봅시다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p001">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"><img src="https://storage.ccfolia-cdn.net/users/n6VD6dIg95PXPfsB2MgJGpkdinw2/files/25f478ce81c789b5021b624d631bc8b565f04b4749d695b5a90e8d349b0d52ff?t=1786249759005"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #ffffff">▼</p>
+                    <p class="ccl_Utext">결말을 두려워하지 마세요.<br>이 또한 쉼표로 이어질 마침표일 뿐입니다.<br>기나긴 여정의 끝은 새로운 여정의 시작,<br>당신의 다음 이야기를 기다리고 있겠습니다.</p>
+                </div>
+            </div>
+            <div class="ccl_player p014">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #4caf50">ENDING 1 - 재회를 기약하는 끝</p>
+                    <p class="ccl_Utext">에노모토 신야, 시즈사와 나오 생환.</p>
+                </div>
+            </div>
+            <div class="ccl_player p003">
+                <div class="ccl_infoWrap">
+                    <div class="ccl_imgWrap"></div>
+                </div>
+                <div class="ccl_textWrap">
+                    <p class="ccl_Uname" style="color: #8bc34a">✦</p>
+                    <p class="ccl_Utext">안녕, 또 언젠가!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
